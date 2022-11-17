@@ -29,7 +29,7 @@ blogsRouter.get( '/:id', ( request, response, next ) => {
         .catch( error => next(error) )
 })
 
-blogsRouter.post('/', ( request, response, next ) => {
+blogsRouter.post( '/', ( request, response, next ) => {
     const body = request.body
 
     const blog = new Blog( {
