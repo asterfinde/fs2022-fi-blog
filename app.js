@@ -40,7 +40,6 @@ app.use( middleware.requestLogger )
 
 // define 'root_path' to create "related routes" to the app
 app.use( '/api/blogs', blogsRouter )
-// app.use( `'${config.ROOT_APP}'`, blogsRouter )
 
 app.use( middleware.unknownEndpoint )
 app.use( middleware.errorHandler )
