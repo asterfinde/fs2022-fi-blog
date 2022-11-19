@@ -4,9 +4,8 @@
  */
 
 //~
+import app from './app.js'              // the actual Express app
 import http from 'http'
-
-import app from './app.js'
 import config from './utils/config.js'
 import logger from './utils/logger.js'
 
