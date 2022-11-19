@@ -9,7 +9,8 @@
     "server": "nodemon index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "start": "node index.js",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "jest --verbose"
   },
   "author": "",
   "license": "ISC",
@@ -21,7 +22,9 @@
     "mongoose": "^6.6.3"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
     "eslint": "^8.27.0",
+    "jest": "^29.3.1",
     "nodemon": "^2.0.15"
   }
 }
